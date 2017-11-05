@@ -1,0 +1,116 @@
+body {
+    font-family:sans-serif;
+}
+
+h1,h2,h3 {
+    font-family:cursive;
+    color: blue;
+}
+
+h2 {
+}
+
+h3 {
+    padding:0px;
+    margin:0px;
+    color: black;
+}
+
+.menu{
+    display:inline-block;    
+}
+
+.recette{
+    border:solid orange 1px;
+    display:inline-block;
+    /*  background-image: url("Images/GateauFromageErable.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 300px;
+     * */
+    width:90%;
+}
+
+#gateau{
+float:right;
+    height:380px;
+    margin-right:40px;
+}
+
+#img{
+    float:right;
+}
+
+p{
+    margin-top:5px;
+}
+
+.prep{
+    background-color:#F8F8FF;    
+}
+
+.pastille{
+    background-color:red;
+    height:20px;
+    width:50px;
+    color:white;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+blockquote, #mesures {
+    font-style:italic;
+    text-align:right
+}
+
+.ingredient {
+    color:black;
+}
+
+ul, body > ol {
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.operation {
+    color: black;
+    font-style: normal;
+}
+
+ol ol {
+    list-style-type:lower-latin;
+}
+
+body > ol > li {
+    margin: 5px 0;
+}
+
+.metrique, .imperial{
+    font-style:italic;
+}
+
+#mesures, #mesures-label {
+    display:none
+}
+
+.metrique {
+    display:inline;
+}
+
+.imperial {
+    display:none
+}
+
+/* décommenter pour l'affichage dynamique des unités */
+
+#mesures, #mesures-label {
+    display:none;
+}
+
+#mesures:checked ~ ul .metrique {
+     display:none;
+}
+
+#mesures:checked ~ ul .imperial {
+    display:inline
+}
