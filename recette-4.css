@@ -171,4 +171,12 @@ footer a{
 	    float:left;
 	}
 
+	#ing{
+		clear:both;
+	}
+
+	#img{
+		margin-top:20px;
+	}
+
 }
