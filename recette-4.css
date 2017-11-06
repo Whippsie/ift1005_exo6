@@ -17,22 +17,26 @@ h3 {
 }
 
 .menu{
-    display:inline-block;    
+    float:left;
+    width:100px;
 }
 
 .recette{
     border:solid orange 1px;
-    display:inline-block;
-    /*  background-image: url("Images/GateauFromageErable.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 300px;
-     * */
-    width:90%;
+    float:right;
+    width:80%;
+    margin-bottom:20px;
+    margin-right:20px;
+}
+
+a{
+    display:block;
+    width:80px;
+    margin-right:20px;
 }
 
 #gateau{
-float:right;
+    float:right;
     height:380px;
     margin-right:40px;
 }
@@ -46,15 +50,18 @@ p{
 }
 
 .prep{
-    background-color:#F8F8FF;    
+    background-color:#F8F8FF;   
+    clear:left; 
 }
 
 .pastille{
     background-color:red;
     height:20px;
-    width:50px;
+    width:90px;
+    display:block;
     color:white;
     padding: 5px 5px 5px 5px;
+    margin-top:5px;
     text-decoration: none;
 }
 
@@ -101,6 +108,27 @@ body > ol > li {
     display:none
 }
 
+.section{
+    float:left;
+}
+
+footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    border-top:solid 1px orange;
+    width:100%;
+    background-color:#ffffff;
+}
+
+footer a{
+    margin:0 auto;
+    display:block;
+}
+
+#ricardo{
+    height:20px;
+}
 /* décommenter pour l'affichage dynamique des unités */
 
 #mesures, #mesures-label {
@@ -113,4 +141,34 @@ body > ol > li {
 
 #mesures:checked ~ ul .imperial {
     display:inline
+}
+
+@media (max-width:1023px){
+	.section {
+	    clear:both;
+	}
+
+	.prep{
+	    clear:both;
+	}
+
+	.ingredient{
+	    clear:both;
+	}
+
+	.menu{
+	    float:none;
+	    margin-bottom:20px;
+    	    width:300px;
+	}
+
+	.pastille{
+	    clear:both;
+	    display:inline;
+	}
+
+	.recette{
+	    float:left;
+	}
+
 }
